@@ -14,7 +14,7 @@ public class PreferenceDependencies {
 	public PreferenceDependencies(AppiumDriver<?> driver) {
 		PageFactory.initElements(new AppiumFieldDecorator(driver), this);
 	}
-	
+	// replace by @iOSFindBy when dealing with the iOS apps
 	@AndroidFindBy(id="android:id/checkbox")
 	public WebElement checkbox;
 	
