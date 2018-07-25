@@ -44,7 +44,7 @@ public class AppTest
         assertTrue(prefDeps.editTextField.getText().equals(""));
         prefDeps.editTextField.sendKeys("Secure Network");
         assertTrue(prefDeps.editTextField.getText().equals("Secure Network"));
-        assertTrue(prefDeps.okButton.isDisplayed());
-        prefDeps.okButton.click();
+        assertTrue(prefDeps.buttons.get(1).isDisplayed());
+        prefDeps.buttons.get(1).click();
     }
 }

@@ -1,5 +1,7 @@
 package pageObjects;
 
+import java.util.List;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 
@@ -23,5 +25,5 @@ public class PreferenceDependencies {
 	public WebElement editTextField;
 	
 	@AndroidFindBy(className="android.widget.Button")
-	public WebElement okButton;
+	public List<WebElement> buttons;
 }
